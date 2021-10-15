@@ -89,7 +89,7 @@ console.log(counter.value);
 const getEEGData = () => {
   console.log("Starting connection to WebSocket Server");
 
-  connection.value = new WebSocket("ws://localhost:8765");
+  connection.value = new WebSocket("ws://eeg-image-nteepy55bq-uc.a.run.app");
 
   connection.value.onopen = function(event) {
     console.log(event);
